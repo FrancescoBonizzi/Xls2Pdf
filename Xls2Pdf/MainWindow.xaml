@@ -1,0 +1,44 @@
+﻿<Window
+    x:Class="Xls2Pdf.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Xls2Pdf"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Xls to Pdf converter"
+    Width="500"
+    SizeToContent="Height"
+    mc:Ignorable="d">
+
+    <StackPanel Orientation="Vertical" Margin="15">
+
+        <StackPanel Orientation="Horizontal" Margin="5">
+            <TextBlock Text="Select Excel files to convert to Pdf: " Padding="10, 2" />
+            <Button Command="{Binding SelectFilesToConvertToPdfCommand}" Content="Select files..." Padding="10, 2" />
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Margin="15">
+            <TextBlock Text="Selected files" Padding="0, 5" />
+            <ListView Height="200" ItemsSource="{Binding FilesToConvertToPdf}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn DisplayMemberBinding="{Binding FileNameWithoutExtension}" Width="100" Header="File name" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Margin="5">
+            <TextBlock Text="Each converted file will be saved in the original Excel file location" Padding="10, 2" />
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal" Margin="15" HorizontalAlignment="Right">
+            <ProgressBar Width="200" IsIndeterminate="True" Margin="5, 0" Visibility="{Binding ProgressBarVisibility}" />
+            <Button Command="{Binding RestartCommand}" Content="Restart" Padding="10, 2" Margin="5, 0" />
+            <Button Command="{Binding ConvertToPdfCommand}" Content="Convert to Pdf" Padding="10, 2" Margin="5, 0" />
+        </StackPanel>
+
+    </StackPanel>
+
+
+</Window>
