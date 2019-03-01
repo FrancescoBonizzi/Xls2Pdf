@@ -16,3 +16,4 @@ Simply clone this repository and build the `Xls2Pdf.sln` solution.
 - Help in making the form more stilysh :-)
 - Propose new features / improvements
 - Just telling your opinion :-)
+- [Offer me an espresso!](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=DTT7P8N3TV7N6&currency_code=EUR&source=url) ;-)
