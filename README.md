@@ -1,6 +1,6 @@
 # Xls2Pdf
 
-[![Build status](https://flowsoftproject.visualstudio.com/GithubOpenSource/_apis/build/status/Xls2Pdf)](https://flowsoftproject.visualstudio.com/GithubOpenSource/_build/latest?definitionId=24)
+[![Build status](https://dev.azure.com/fbonizzi/GithubOpenSource/_apis/build/status/Xls2Pdf)](https://dev.azure.com/fbonizzi/GithubOpenSource/_build/latest?definitionId=24)
 
 Xls2Pdf is a simple WPF application where you can select multiple Excel files in order to export them individually as Pdf.
 
