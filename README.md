@@ -8,6 +8,8 @@ Technically speaking:
 - I implemented `MVVM` pattern with `MvvmLightLibs`
 - To communicate with Excel, I used the COM library `Microsoft.Office.Interop.Excel`
 
+[An article I wrote on Medium with the explaination of this code](https://medium.com/better-programming/convert-excel-files-into-pdf-in-c-net-5566f170a70e)
+
 ---
 ![Screenshot](https://raw.githubusercontent.com/FrancescoBonizzi/Xls2Pdf/master/Screenshots/Xls2PdfScreenshot.png)
 
